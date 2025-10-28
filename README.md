@@ -23,7 +23,10 @@ I used ChatGPT for help on this project:
 2. I modified it by adding the dropdown menu and rating options to make for a better user experience
 3. It enhanced user experience
 Screenshot:
-Screenshot is in the repo
+Doesn't allow me to upload a screenshot to repo on ReadMe
+<img width="1280" height="800" alt="Screenshot 2025-10-28 at 1 57 33 PM" src="https://github.com/user-attachments/assets/c3e9a432-f058-48e4-aadb-0bee04cc8efa" />
+
+
 
 Future Improvements: 
 
