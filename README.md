@@ -6,7 +6,7 @@ Problem: Life can be very stressful, so people need a way to relieve stress and 
 
 Solution: My app retrieves a database of jokes from an API to give the user a random joke to cheer up their day. 
 
-API Link: `https://v2.jokeapi.dev/joke/${chosenCategory}?safe-mode`
+API Link: `https://v2.jokeapi.dev`
 
 Feature 1: 
 Fetches a joke from the API
