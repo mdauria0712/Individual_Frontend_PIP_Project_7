@@ -1,1 +1,74 @@
+#Selecting Categories
+
+function CategorySelect({ category, setCategory }) {
+  return (
+    <select
+      value={category}
+      onChange={(e) => setCategory(e.target.value)}
+      style={{
+        padding: "0.5rem",
+        borderRadius: "8px",
+        border: "1px solid #ccc",
+        marginBottom: "1rem",
+      }}
+    >
+      <option value="Programming">Programming</option>
+      <option value="Misc">Miscellaneous</option>
+      <option value="Pun">Pun</option>
+      <option value="Spooky">Spooky</option>
+      <option value="Christmas">Christmas</option>
+    </select>
+  );
+}
+
+export default CategorySelect;
+
+
+#JokeCard
+function JokeCard({ loading, error, joke }) {
+  return (
+    <div
+      style={{
+        background: "#fff",
+        borderRadius: "12px",
+        border: "1px solid #ddd",
+        padding: "1rem",
+        maxWidth: "600px",
+        margin: "0 auto",
+      }}
+    >
+      {loading && <p>Loading joke...</p>}
+      {error && <p style={{ color: "red" }}>Error: {error}</p>}
+      {!loading && !error && (
+        <pre
+          style={{
+            fontSize: "1.25rem",
+            whiteSpace: "pre-line",
+            minHeight: "4rem",
+          }}
+        >
+          {joke}
+        </pre>
+      )}
+    </div>
+  );
+}
+
+export default JokeCard;
+
+#MakeRatingForJoke
+function AverageRating({ averageRating }) {
+  if (!averageRating) return null;
+
+  return (
+    <p style={{ marginTop: "1rem", color: "#555" }}>
+      Average rating across all jokes:{" "}
+      <strong>{averageRating}/5</strong>
+    </p>
+  );
+}
+
+export default AverageRating;
+
+
 
